@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.main-content {
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f0f2f5;
+}
+p {
+  color: #333;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 20px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+button:hover {
+  background-color: #45a049;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+});
+</script>
+</head>
+<body>
+
+<div class="main-content">
+  <p>Triết lý đào tạo</p>
+  <p>Toàn diện - Sáng tạo - Phụng sự</p>
+  <button>Thực hiện</button>
+</div>
+
+</body>
+</html>

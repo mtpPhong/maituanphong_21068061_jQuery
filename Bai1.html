@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  text-align: center; /* Căn giữa nội dung */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh; /* Full height */
+  margin: 0; /* Remove default margin */
+}
+p {
+  color: #333;
+  font-size: 16px;
+  margin: 10px 0; /* Spacing between paragraphs */
+}
+button {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color change */
+}
+button:hover {
+  background-color: #005f73;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Trường ĐH CNTT</p>
+<p>ĐH Quốc gia Tp.HCM</p>
+<button>Ẩn/Hiện thẻ p</button>
+
+</body>
+</html>

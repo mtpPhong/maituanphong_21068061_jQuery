@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: #e9ecef;
+}
+#p1 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#p1").hover(
+    function(){
+      alert("Bạn đã di chuyển chuột vào");
+    },
+    function(){
+      alert("Thực hiện việc tiếp theo");
+    }
+  ); 
+});
+</script>
+</head>
+<body>
+
+<p id="p1">Demo hover</p>
+
+</body>
+</html>
